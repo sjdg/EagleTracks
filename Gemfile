@@ -35,5 +35,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-gem 'mongoid', '3.0.1'
+gem "mongo_mapper" # or "Mongoid," or another Mongo ODM, or nothing
 gem 'bson_ext'
+gem "mongo_session_store-rails3"

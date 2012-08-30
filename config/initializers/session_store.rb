@@ -1,6 +1,10 @@
 # Be sure to restart your server when you modify this file.
 
-EagleTracks::Application.config.session_store :cookie_store, key: '_EagleTracks_session'
+#config.gem "mongo_mapper"
+#config.gem "mongo_session_store", :lib => "mongo_session_store/mongo_mapper"
+
+
+EagleTracks::Application.config.session_store = :mongo_mapper_store
 
 # Use the database for sessions instead of the cookie-based default,
 # which shouldn't be used to store highly confidential information
