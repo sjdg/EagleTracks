@@ -50,6 +50,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.3.3)
+    database_cleaner (0.8.0)
     diff-lcs (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
@@ -155,6 +156,7 @@ DEPENDENCIES
   bson_ext
   capybara (= 1.1.2)
   coffee-rails (= 3.2.2)
+  database_cleaner
   jquery-rails (= 2.0.2)
   mongo_mapper
   mongo_session_store-rails3
