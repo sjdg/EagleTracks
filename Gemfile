@@ -7,6 +7,8 @@ gem 'rails', '3.2.6'
 
 group :development, :test do
   gem 'rspec-rails', '2.11.0'
+  gem 'watchr'
+  gem 'spork', '~> 1.0rc'
 end
 group :test do
   gem 'database_cleaner'
@@ -20,6 +22,7 @@ group :assets do
   gem 'sass-rails',   '3.2.5'
   gem 'coffee-rails', '3.2.2'
   gem 'uglifier', '1.2.3'
+
 end
 
 gem 'jquery-rails', '2.0.2'

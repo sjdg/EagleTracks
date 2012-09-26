@@ -24,4 +24,5 @@ describe "Static pages" do
       page.should have_content('About Us')
     end
   end
+
 end
