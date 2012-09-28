@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
-
+gem 'sqlite3'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -41,9 +41,6 @@ gem 'jquery-rails', '2.0.2'
 
 # To use debugger
 # gem 'debugger'
-gem "mongo_mapper" # or "Mongoid," or another Mongo ODM, or nothing
-gem 'bson_ext'
-gem "mongo_session_store-rails3"
 
 
 group :test do
