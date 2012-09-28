@@ -29,7 +29,8 @@
   </div>
   <div class="field">
     <%= f.label :user_type_id %><br />
-    <%= f.number_field :user_type_id %>
+    <%= collection_select(:user_type, :user_id, UserType.all, :id, :user_type) %>
+
   </div>
   <div class="field">
     <%= f.label :organization_id %><br />
