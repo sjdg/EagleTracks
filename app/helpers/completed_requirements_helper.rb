@@ -1,0 +1,2 @@
+module CompletedRequirementsHelper
+end

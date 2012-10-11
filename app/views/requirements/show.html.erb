@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @requirement.id %>
+</p>
+
+<p>
+  <b>Designator:</b>
+  <%= @requirement.designator %>
+</p>
+
+<p>
+  <b>Text:</b>
+  <%= @requirement.text %>
+</p>
+
+<p>
+  <b>Subrequirements:</b>
+  <%= @requirement.subrequirements %>
+</p>
+
+<p>
+  <b>Subrequirements required:</b>
+  <%= @requirement.subrequirements_required %>
+</p>
+
+
+<%= link_to 'Edit', edit_requirement_path(@requirement) %> |
+<%= link_to 'Back', requirements_path %>

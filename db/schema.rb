@@ -11,7 +11,24 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120928001621) do
+ActiveRecord::Schema.define(:version => 20121011231705) do
+
+  create_table "completed_requirements", :force => true do |t|
+    t.integer  "requirement_id"
+    t.integer  "completes_date"
+    t.integer  "user_id"
+    t.datetime "created_at",     :null => false
+    t.datetime "updated_at",     :null => false
+  end
+
+  create_table "requirements", :force => true do |t|
+    t.string   "designator"
+    t.string   "text"
+    t.integer  "subrequirements"
+    t.integer  "subrequirements_required"
+    t.datetime "created_at",               :null => false
+    t.datetime "updated_at",               :null => false
+  end
 
   create_table "user_types", :force => true do |t|
     t.string   "user_type"

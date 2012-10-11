@@ -1,0 +1,29 @@
+<h1>Listing completed_requirements</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>Requirements</th>
+    <th>Completes date</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @completed_requirements.each do |completed_requirement| %>
+  <tr>
+    <td><%= completed_requirement.id %></td>
+    <td><%= completed_requirement.requirements %></td>
+    <td><%= completed_requirement.completes_date %></td>
+    <td><%= completed_requirement.user_id %></td>
+    <td><%= link_to 'Show', completed_requirement %></td>
+    <td><%= link_to 'Edit', edit_completed_requirement_path(completed_requirement) %></td>
+    <td><%= link_to 'Destroy', completed_requirement, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Completed requirement', new_completed_requirement_path %>

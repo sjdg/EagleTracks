@@ -1,0 +1,30 @@
+<%= form_for(@completed_requirement) do |f| %>
+  <% if @completed_requirement.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@completed_requirement.errors.count, "error") %> prohibited this completed_requirement from being saved:</h2>
+
+      <ul>
+      <% @completed_requirement.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :requirements %><br />
+    <%= collection_select(:designator, :requirement_id, Requirement.all, :id, :designator) %>
+    <%# collection_select(:user_type,   :user_id,        UserType.all,    :id, :user_type) %>
+  </div>
+  <div class="field">
+    <%= f.label :completes_date %><br />
+    <%= f.text_field :completes_date %>
+  </div>
+  <div class="field">
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

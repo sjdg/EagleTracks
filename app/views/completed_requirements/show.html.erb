@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @completed_requirement.id %>
+</p>
+
+<p>
+  <b>Requirements:</b>
+  <%= @completed_requirement.requirements %>
+</p>
+
+<p>
+  <b>Completes date:</b>
+  <%= @completed_requirement.completes_date %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @completed_requirement.user_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_completed_requirement_path(@completed_requirement) %> |
+<%= link_to 'Back', completed_requirements_path %>

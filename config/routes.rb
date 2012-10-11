@@ -1,4 +1,8 @@
 EagleTracks::Application.routes.draw do
+  resources :completed_requirements
+
+  resources :requirements
+
   resources :user_types
 
   resources :users
