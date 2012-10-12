@@ -1,1 +1,5 @@
-TODO
+-Pre populate Usertypes
+-Make usertypes unique(In model with a validation)
+-Prepopulate Awards and Requirements
+-Set /user/show to display awards and requirements that have been worked on.
+-Plenty more.
