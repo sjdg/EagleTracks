@@ -1,4 +1,6 @@
 EagleTracks::Application.routes.draw do
+  resources :award_earneds
+
   resources :awards
 
   resources :completed_requirements

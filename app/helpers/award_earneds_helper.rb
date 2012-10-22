@@ -1,0 +1,2 @@
+module AwardEarnedsHelper
+end
