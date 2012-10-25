@@ -1,10 +1,10 @@
-<%= form_for(@award_earned) do |f| %>
-  <% if @award_earned.errors.any? %>
+<%= form_for(@earned_award) do |f| %>
+  <% if @earned_award.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(@award_earned.errors.count, "error") %> prohibited this award_earned from being saved:</h2>
+      <h2><%= pluralize(@earned_award.errors.count, "error") %> prohibited this earned_award from being saved:</h2>
 
       <ul>
-      <% @award_earned.errors.full_messages.each do |msg| %>
+      <% @earned_award.errors.full_messages.each do |msg| %>
         <li><%= msg %></li>
       <% end %>
       </ul>

@@ -1,0 +1,27 @@
+<h1>Listing earned_awards</h1>
+
+<table>
+  <tr>
+    <th>Award</th>
+    <th>Date earned</th>
+    <th>User</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @earned_awards.each do |earned_award| %>
+  <tr>
+    <td><%= earned_award.award_id %></td>
+    <td><%= earned_award.date_earned %></td>
+    <td><%= earned_award.user_id %></td>
+    <td><%= link_to 'Show', earned_award %></td>
+    <td><%= link_to 'Edit', edit_earned_award_path(earned_award) %></td>
+    <td><%= link_to 'Destroy', earned_award, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Earned award', new_earned_award_path %>

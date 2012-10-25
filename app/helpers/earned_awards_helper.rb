@@ -1,0 +1,2 @@
+module EarnedAwardsHelper
+end

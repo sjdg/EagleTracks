@@ -1,5 +1,7 @@
 EagleTracks::Application.routes.draw do
-  resources :award_earneds
+  resources :earned_awards
+
+  resources :awards_earned
 
   resources :awards
 
