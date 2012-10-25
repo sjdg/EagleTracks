@@ -1,27 +1,35 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>EagleTracks</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<ul>
-	<li>
-		<a href="/users">Users</a>
-	</li>
-	<li>
-		<a href="/user_types">User Types</a>
-	</li>
-      <li>
-        <a href="/requirements">Requirements</a>
-      </li>
-      <li>
-        <a href="/completed_requirements">Completed Requirements</a>
-      </li>
-</ul>
-<%= yield %>
-
-</body>
+  <head>
+    <title>EagleTracks</title>
+    <%= stylesheet_link_tag    "application", media: "all" %>
+    <%= javascript_include_tag "application" %>
+    <%= csrf_meta_tags %>
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <header class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <%= link_to "Eagle Tracks", '#', id: "logo" %>
+          <nav>
+            <ul class="nav pull-right">
+              <li><%= link_to "Users",    'users' %></li>
+              <li><%= link_to "User Types",    '/user_types' %></li>
+              <li><%= link_to "Requirements", '/requirements' %></li>
+              <li><%= link_to "Completed Requirements", '/completed_requirements' %></li>
+              <li><%= link_to "Awards", '/awards' %></li>
+              <li><%= link_to "Awards Earned", '/award_earneds' %></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="container">
+      <%= yield %>
+    </div>
+  </body>
 </html>
+
