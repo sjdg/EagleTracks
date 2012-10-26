@@ -1,10 +1,10 @@
 require 'spec_helper'
 
-describe "AwardEarneds" do
-  describe "GET /award_earneds" do
+describe "EarnedAwards" do
+  describe "GET /earned_awards" do
     it "works! (now write some real specs)" do
       # Run the generator again with the --webrat flag if you want to use webrat methods/matchers
-      get award_earneds_path
+      get earned_awards_path
       response.status.should be(200)
     end
   end
